@@ -138,3 +138,11 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+## Contribute
+
+If you find a bug, please submit an issue and I will try to fix it
+as soon as possible.
+
+If you would like to contribute to the development of this tool,
+feel free to fork and submit pull requests.
