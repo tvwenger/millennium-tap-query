@@ -137,6 +137,8 @@ class MillenniumQuery:
         """
         if self.job_url is None:
             raise RuntimeError("Must first call query() to set up MillenniumQuery")
+        if self.phase != 'COMPLETED':
+            raise RuntimeError("Job {0} is not completed yet!".format(self.job_id))
         url = '{0}/results/result'.format(self.job_url)
         # Stream chunks from download since the file could be huge
         response = self.session.get(url,cookies=self.cookies,stream=True)
