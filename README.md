@@ -14,6 +14,8 @@ query](http://svn.ari.uni-heidelberg.de/svn/gavo/python/trunk/docs/tapquery.rstx
 tool in the German Astrophysical Virtual Observatory (GAVO) VOtables
 package.
 
+Cite as: Wenger, Trey V. (2016). millennium-tap-query v1.0. Zenodo. 10.5281/zenodo.47429
+
 ## Prerequisites
 
 This program is tested on both Python 2.7 and Python 3.5. You can
