@@ -150,12 +150,12 @@ class MillenniumQuery:
             elif phase == 'ERROR':
                 raise RuntimeError("{0}".format(self.error_message))
             if max_attempts:
-                if niter > max_attempts:
+                if attempts > max_attempts:
                     raise RuntimeError("Did not get MillenniumQuery results after {0} iterations, job {1}".format(max_attempts,self.job_id))
             attempts += 1
             # wait for 120 seconds or 2^(niter/4) seconds,
             # whichever is shorter
-            wait_time = min(120.,poll_interval*increment)
+            wait_time = min(120.,wait_time*increment)
             time.sleep(min(120.,wait_time))
 
     def save(self,filename):
