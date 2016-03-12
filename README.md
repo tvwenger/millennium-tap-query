@@ -1,4 +1,6 @@
 # millennium-tap-query
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.47429.svg)](http://dx.doi.org/10.5281/zenodo.47429)
+
 A Python Tool to Query the Millennium Simulation UWS/TAP client
 
 This is a simple wrapper for the Python package `requests` to deal
