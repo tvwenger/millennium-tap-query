@@ -1,5 +1,4 @@
 # millennium-tap-query
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.47429.svg)](http://dx.doi.org/10.5281/zenodo.47429)
 
 A Python Tool to Query the Millennium Simulation UWS/TAP client
 
@@ -14,6 +13,10 @@ query](http://svn.ari.uni-heidelberg.de/svn/gavo/python/trunk/docs/tapquery.rstx
 tool in the German Astrophysical Virtual Observatory (GAVO) VOtables
 package.
 
+## Citation
+
+If you use this tool in any published work, please use the [Astrophysics Source Code Library](http://www.ascl.net/) reference: TO BE UPDATED
+
 ## Prerequisites
 
 This program is tested on both Python 2.7 and Python 3.5. You can
@@ -21,6 +24,8 @@ install the required prerequisites using `pip` via
 ```bash
 pip install -r requirements.txt
 ```
+
+You will also need access (username and password) to the Millennium Simulation database. You can register for access [here](http://galformod.mpa-garching.mpg.de/portal/contact.html).
 
 ## Usage Examples
 ```python
