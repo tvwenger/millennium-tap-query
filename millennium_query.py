@@ -171,7 +171,8 @@ class MillenniumQuery:
         response = get_response(self.session,url,method='GET',
                                 cookies=self.cookies,stream=True)
         with open(filename,'w') as f:
-            for chunk in response.iter_content(chunk_size=1024):
+            for chunk in response.iter_content(chunk_size=1024,
+                                               decode_unicode=True):
                 if chunk: # filter out "keep-alive" chunks
                     f.write(str(chunk))
 
