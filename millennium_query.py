@@ -22,10 +22,11 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-11 Mar 2016 - TVW Finalized version 1.0
+11 Mar 2016 - v1.0.0 TVW Finalized version 1.0
+16 Mar 2016 - v1.0.1 TVW added unicode support in response.iter_content
 """
 _PROG_NAME = 'millennium_query.py'
-_VERSION = 'v1.0'
+_VERSION = 'v1.0.1'
 
 import os
 import time
