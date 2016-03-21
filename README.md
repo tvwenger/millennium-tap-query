@@ -40,6 +40,7 @@ conn.query('SELECT TOP 10 * FROM MPAGalaxies..DeLucia2006a')
 conn.run() # Start job
 conn.wait() # Wait until job is finished
 conn.save('results.csv') # Stream results to file
+conn.delete() # Delete job from server
 conn.close() # close connection
 ```
 
@@ -51,6 +52,7 @@ job_id = 'foobar'
 conn = millennium_query.MillenniumQuery(username,password,job_id=job_id)
 conn.wait() # Make sure job is done
 conn.save('results.csv')
+conn.delete()
 conn.close()
 ```
 
@@ -68,6 +70,7 @@ for i in range(10):
 for i,conn in enumerate(jobs):
     conn.wait()
     conn.save('results_{0}.csv'.format(i))
+    conn.delete()
     conn.close()
 ```
 

@@ -24,6 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 11 Mar 2016 - v1.0.0 TVW Finalized version 1.0
 16 Mar 2016 - v1.0.1 TVW added unicode support in response.iter_content
+21 Mar 2016 - v1.1   TVW added delete function
 """
 _PROG_NAME = 'millennium_query.py'
 _VERSION = 'v1.0.1'
@@ -176,6 +177,18 @@ class MillenniumQuery:
                                                decode_unicode=True):
                 if chunk: # filter out "keep-alive" chunks
                     f.write(str(chunk))
+
+    def delete(self):
+        """
+        Delete job from server
+        """
+        # Check that we've already run query()
+        if self.job_url is None:
+            raise RuntimeError("Must first call query() to set up MillenniumQuery")
+        post_data = self.post_data.copy()
+        post_data['ACTION'] = 'DELETE'
+        response = get_response(self.session,self.job_url,method='POST',
+                                data=post_data,cookies=self.cookies)
 
     def close(self):
         """
