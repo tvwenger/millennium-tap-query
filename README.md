@@ -1,5 +1,7 @@
 # millennium-tap-query
 
+## UPDATE: This tool no loner works due to the discontinuation of the Millennium TAP Web Client.
+
 A Python Tool to Query the Millennium Simulation UWS/TAP client
 
 This is a simple wrapper for the Python package `requests` to deal
