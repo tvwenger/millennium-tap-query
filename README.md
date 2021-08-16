@@ -17,7 +17,7 @@ package.
 
 ## Citation
 
-If you use this tool in any published work, please use the [Astrophysics Source Code Library](http://www.ascl.net/) reference: TO BE UPDATED
+If you use this tool in any published work, please use the following reference: http://dx.doi.org/10.5281/zenodo.47429
 
 ## Prerequisites
 
